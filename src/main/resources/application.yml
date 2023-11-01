@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    mysql:
+      url: jdbc:mysql://localhost:3308/provajava
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    postgres:
+      url: jdbc:postgresql://localhost:5432/mydb
+      username: root
+      password: root
+      driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  profiles:
+    active: mysql
